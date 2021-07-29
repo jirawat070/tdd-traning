@@ -55,10 +55,10 @@ test('given "PAO" want "HELLO, PAO!"', () => {
 })
 
 test('given "["Pao", "Pond"]" want "HELLO, Pao and Pond"', () => {
-  const given = ['Pao', 'Pond']
-  const want = 'HELLO, Pao and Pond'
+  const given = ['Pao', 'Pond'];
+  const want = 'Hello, Pao and Pond';
 
-  const got = greet(given)
+  const got = greet(given);
 
-  expect(got).toBe(want)
+  expect(got).toBe(want);
 })
