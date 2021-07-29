@@ -1,12 +1,20 @@
 function greet(name) {
-  if(name === '' || name === null || name === undefined) {
+  if (name === '' || name === null || name === undefined || name.length == 0) {
     return 'Hello, my friend.'
   }  
   if (isUpper(name)) {
     return `HELLO, ${name}!`
   }
   if (Array.isArray(name)) {
-    return `Hello, ${name[0]} and ${name[1]}`
+    let fullText = 'Hello';
+    for (var i = 0; i < name.length; i++) {
+      if (i === name.length - 1) {
+      fullText = fullText + ' and ' + name[i]
+      } else {
+      fullText = fullText + ', ' + name[i]
+      }
+    }
+    return fullText;
   }
   return `Hello, ${name}.`
 }

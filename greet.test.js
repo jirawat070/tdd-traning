@@ -54,20 +54,29 @@ test('given "PAO" want "HELLO, PAO!"', () => {
   expect(got).toBe(want);
 })
 
-test('given "["Pao", "Pond"]" want "HELLO, Pao and Pond"', () => {
-  const given = ['Pao', 'Pond'];
-  const want = 'Hello, Pao and Pond';
-
-  const got = greet(given);
-
-  expect(got).toBe(want);
-})
-
-test('given "["Pao", "Pond", "Pang"]" want "HELLO, Pao, Pond and Pang"', () => {
-  const given = ['Pao', 'Pond', 'Pang']
-  const want = 'HELLO, Pao, Pond and Pang'
+test('given "["Pao", "Pond"]" want "Hello, Pao and Pond"', () => {
+  const given = ['Pao', 'Pond']
+  const want = 'Hello, Pao and Pond'
 
   const got = greet(given)
 
   expect(got).toBe(want)
+})
+
+test('given "["Pao", "Pond", "Pang"]" want "Hello, Pao, Pond and Pang"', () => {
+  const given = ['Pao', 'Pond', 'Pang']
+  const want = 'Hello, Pao, Pond and Pang'
+
+  const got = greet(given)
+
+  expect(got).toBe(want)
+})
+
+test('give "[]" want "Hello, my friend."', () => {
+  const given = []
+  const want = 'Hello, my friend.'
+
+   const got = greet(given)
+
+   expect(got).toBe(want)
 })
