@@ -44,3 +44,12 @@ test('given undefined want "Hello, my friend."', () => {
 
   expect(got).toBe(want)
 })
+
+test('given PAO want "HELLO, PAO!"', () => {
+  const given = 'PAO'
+  const want = 'HELLO, PAO!'
+
+  const got = greet(given)
+
+  expect(got).toBe(want)
+})
