@@ -26,3 +26,21 @@ test('given empty string want "Hello, my friend."', () => {
 
   expect(got).toBe(want)
 })
+
+test('given null want "Hello, my friend."', () => {
+  const given = null
+  const want = 'Hello, my friend.'
+
+  const got = greet(given)
+
+  expect(got).toBe(want)
+})
+
+test('given undefined want "Hello, my friend."', () => {
+  const given = undefined
+  const want = 'Hello, my friend.'
+
+  const got = greet(given)
+
+  expect(got).toBe(want)
+})
