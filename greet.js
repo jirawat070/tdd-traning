@@ -1,6 +1,9 @@
 function greet(name) {
   if(name === '' || name === null || name === undefined) {
     return 'Hello, my friend.'
+  }  
+  if (isUpper(name)) {
+    return `HELLO, ${name}!`
   }
   return `Hello, ${name}.`
 }

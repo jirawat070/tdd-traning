@@ -28,28 +28,28 @@ test('given empty string want "Hello, my friend."', () => {
 })
 
 test('given null want "Hello, my friend."', () => {
-  const given = null
-  const want = 'Hello, my friend.'
+  const given = null;
+  const want = 'Hello, my friend.';
 
-  const got = greet(given)
+  const got = greet(given);
 
-  expect(got).toBe(want)
+  expect(got).toBe(want);
 })
 
 test('given undefined want "Hello, my friend."', () => {
-  const given = undefined
-  const want = 'Hello, my friend.'
+  const given = undefined;
+  const want = 'Hello, my friend.';
 
-  const got = greet(given)
+  const got = greet(given);
 
-  expect(got).toBe(want)
+  expect(got).toBe(want);
 })
 
-test('given PAO want "HELLO, PAO!"', () => {
-  const given = 'PAO'
-  const want = 'HELLO, PAO!'
+test('given "PAO" want "HELLO, PAO!"', () => {
+  const given = 'PAO';
+  const want = 'HELLO, PAO!';
 
-  const got = greet(given)
+  const got = greet(given);
 
-  expect(got).toBe(want)
+  expect(got).toBe(want);
 })
