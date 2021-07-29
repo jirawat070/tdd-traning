@@ -17,3 +17,12 @@ test('given "Pao" want "Hello, Pao."', () => {
 
   expect(got).toBe(want) // Assert
 })
+
+test('given empty string want "Hello, my friend."', () => {
+  const given = '';
+  const want = 'Hello, my friend.'
+
+  const got = greet(given)
+
+  expect(got).toBe(want)
+})
