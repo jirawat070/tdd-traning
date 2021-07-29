@@ -53,3 +53,12 @@ test('given "PAO" want "HELLO, PAO!"', () => {
 
   expect(got).toBe(want);
 })
+
+test('given "["Pao", "Pond"]" want "HELLO, Pao and Pond"', () => {
+  const given = ['Pao', 'Pond']
+  const want = 'HELLO, Pao and Pond'
+
+  const got = greet(given)
+
+  expect(got).toBe(want)
+})
